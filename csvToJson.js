@@ -19,5 +19,7 @@ function csvJSON(csv){
 
     return JSON.stringify(result);
 }
-fs.writeFileSync('result.json',result) //put the result into a json file
-console.log(csvJSON(csv))
+
+let json = csvJSON(csv)
+
+ fs.writeFileSync('result.json',json) //put the result into a json file
